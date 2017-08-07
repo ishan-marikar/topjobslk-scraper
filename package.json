@@ -8,5 +8,6 @@
     "cheerio": "^1.0.0-rc.2"
   },
   "description": "Topjobs.lk Scraper",
-  "author": "Ishan Marikar <ishan@imarikar.com>"
+  "author": "Ishan Marikar <ishan@imarikar.com>",
+  "repository": "git@github.com:ishan-marikar/topjobslk-scraper.git"
 }
