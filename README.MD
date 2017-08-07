@@ -1,16 +1,23 @@
 # TopJobs.lk Scraper
 
 ```js
-const topjobs = require('topjobslk-scraper');
+const TopJobsScraper = require('topjobslk-scraper');
+
+
+let topJobs = new TopJobsScraper({
+  numberOfPages: 5,
+  url: TopJobs.Section.SOFTWARE
+});
 
 topJobs
-  .scrapePage(TopJobs.Section.SOFTWARE)
-  .then((data) => {
+  .scrape()
+  .then(data => {
     console.log(
       JSON.stringify(data, null, 2)
     );
+    console.log(`There are ${data.length} listings.`);
   })
-  .catch((error) => {
+  .catch(error => {
     console.log(error);
   });
 ```
