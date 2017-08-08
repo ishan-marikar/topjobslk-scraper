@@ -6,7 +6,7 @@ const TopJobsScraper = require('topjobslk-scraper');
 
 let topJobs = new TopJobsScraper({
   numberOfPages: 5,
-  url: TopJobs.Section.SOFTWARE
+  url: TopJobsScraper.Section.SOFTWARE
 });
 
 topJobs
