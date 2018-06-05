@@ -1,7 +1,7 @@
 const TopJobs = require("../");
 let topJobs = new TopJobs({
-  numberOfPages: 5,
-  url: TopJobs.Section.SOFTWARE
+  url: TopJobs.Section.SOFTWARE,
+  retrieveAttachments: false
 });
 
 topJobs
