@@ -1,7 +1,7 @@
 const TopJobs = require("../");
 let topJobs = new TopJobs({
   url: TopJobs.Section.SOFTWARE,
-  retrieveAttachments: false
+  retrieveAttachments: true
 });
 
 topJobs
