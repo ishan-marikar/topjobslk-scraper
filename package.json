@@ -7,9 +7,15 @@
     "axios": "^0.18.0",
     "axios-retry": "^3.1.0",
     "cheerio": "^1.0.0-rc.2",
-    "debug": "^3.1.0"
+    "debug": "^3.1.0",
+    "snyk": "^1.161.1"
   },
   "description": "Topjobs.lk Scraper",
   "author": "Ishan Marikar <ishan@imarikar.com>",
-  "repository": "git@github.com:ishan-marikar/topjobslk-scraper.git"
+  "repository": "git@github.com:ishan-marikar/topjobslk-scraper.git",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
